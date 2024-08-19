@@ -1,10 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BikeZone</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/0a65335560.js" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+
     <script>
         tailwind.config = {
           theme: {
@@ -19,6 +28,24 @@
       <script src="https://kit.fontawesome.com/0a65335560.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  
+  <header>
+    <nav class="md:container mx-auto border flex items-center px-5">
+      <div class="navbar bg-base-100">
+        <div class="flex-1">
+          <h2 class="text-3xl font-bold">Go Ride</h2>
+        </div>
+        <div class="hidden md:contents">
+          <ul class="menu menu-horizontal px-1 text-base font-semibold">
+            <li><a>Home</a></li>
+            <li><a>Shop</a></li>
+            <li><a>News</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+          <button class="btn bg-orange-500 text-white text-xl">Login</button>
+        </div>
+      </div>
+      <div class="md:hidden"><i class="fa-solid fa-bars"></i></div>
+    </nav>
+  </header>
 </body>
 </html>
